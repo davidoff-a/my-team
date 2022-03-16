@@ -1,0 +1,35 @@
+@import "./fonts";
+@import "./style";
+
+//variables
+$fsize: 18px;
+$fcolor: #000000;
+$ffPoppins: "Poppins";
+$ffpt-serif: "PT Serif";
+$ffMontserrat: "Montserrat";
+
+//reset styles
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: $fsize;
+  color: $fcolor;
+  font-family: $ffPoppins;
+}
