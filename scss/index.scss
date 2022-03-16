@@ -1,15 +1,8 @@
 @import "./fonts";
+@import "./variables";
 @import "./style";
 
-//variables
-$fsize: 18px;
-$fcolor: #000000;
-$ffPoppins: "Poppins";
-$ffpt-serif: "PT Serif";
-$ffMontserrat: "Montserrat";
-
 //reset styles
-
 * {
   box-sizing: border-box;
 }
@@ -32,4 +25,6 @@ body {
   font-size: $fsize;
   color: $fcolor;
   font-family: $ffPoppins;
+  line-height: 27px;
+  background-color: #fafafa;
 }

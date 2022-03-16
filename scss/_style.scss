@@ -1,17 +1,56 @@
+@import "./variables";
+
 .wrapper {
-  padding: 110px 240px;
+  height: 100vh;
+  padding: 110px 240px 0 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header {
+  flex: 0 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
   &__title {
+    width: 280px;
+    flex: 0 0 280px;
+    font-family: $ffPtserif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
   }
 
   &__about {
+    flex: 0 1 440px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
   }
 
   &__descr {
+    margin-top: 10px;
+    font-weight: 400;
   }
 }
 .main {
+  flex: 1 1 auto;
 }
 .footer {
+  flex: 0 0 50px;
+  font-family: $ffMontserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #a9a9a9;
+  & span {
+    font-weight: 600;
+  }
 }
