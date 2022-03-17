@@ -53,6 +53,28 @@
   /* Legacy iOS */
 }
 
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/montserrat-v23-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v23-latin-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v23-latin-500.woff2") format("woff2"), url("../assets/fonts/montserrat-v23-latin-500.woff") format("woff"), url("../assets/fonts/montserrat-v23-latin-500.ttf") format("truetype"), url("../assets/fonts/montserrat-v23-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/montserrat-v23-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v23-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v23-latin-600.woff2") format("woff2"), url("../assets/fonts/montserrat-v23-latin-600.woff") format("woff"), url("../assets/fonts/montserrat-v23-latin-600.ttf") format("truetype"), url("../assets/fonts/montserrat-v23-latin-600.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
 /* montserrat-700 - latin */
 @font-face {
   font-family: "Montserrat";
@@ -125,6 +147,7 @@
 }
 
 .main {
+  padding-top: 96px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -144,6 +167,54 @@
 
 .footer span {
   font-weight: 600;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 450px;
+}
+
+.card:nth-child(3n + 2) {
+  padding-top: 100px;
+}
+
+.card:nth-child(3n + 2) .card__position {
+  top: 142px;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+.card__Name {
+  margin-top: 15px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.card__position {
+  position: absolute;
+  right: -65px;
+  top: 42px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 * {
@@ -171,5 +242,6 @@ body {
   font-family: "Poppins";
   line-height: 27px;
   background-color: #fafafa;
+  font-style: normal;
 }
 /*# sourceMappingURL=index.css.map */

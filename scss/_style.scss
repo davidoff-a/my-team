@@ -40,6 +40,7 @@
   }
 }
 .main {
+  padding-top: 96px;
   flex: 1 1 auto;
 }
 .footer {
@@ -52,5 +53,43 @@
   color: #a9a9a9;
   & span {
     font-weight: 600;
+  }
+}
+.main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  &:nth-child(3n + 2) {
+    padding-top: 100px;
+    & .card__position {
+      top: 142px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__Name {
+    margin-top: 15px;
+    font-family: $ffPoppins;
+    font-weight: 600;
+  }
+  &__position {
+    position: absolute;
+    right: -65px;
+    top: 42px;
+    font-family: $ffPtserif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
   }
 }
